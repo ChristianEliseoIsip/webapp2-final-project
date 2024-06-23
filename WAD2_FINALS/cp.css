@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-image: url(night.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}  
+
+.contentContainer {
+    max-width: 900px;
+    height: 100%;
+    padding: 30px;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    border: 1px solid rgba(3, 3, 27);
+    background-color: rgba(3, 3, 27, 0.5);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.game{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "Honk", system-ui;
+    font-size: 70px;
+}
+
+.gameTitle{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.gameBody{
+    margin-left: 50px;
+    line-height: 1.5;
+    font-family: "VT323", monospace;
+    font-size: 25px;
+}
+
+
+#backButton {
+    place-self: center;
+    margin: 25px 0px 15px 20px;
+    padding: 10px;
+    max-width: fit-content;
+    background-color: #44447e;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #44447e;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#backButton:hover {
+    background: linear-gradient(to bottom, yellow, hotpink);
+    color: black;
+    border: 1px solid black;
+}
+

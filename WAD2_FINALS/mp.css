@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-image: url(tech.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}  
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03031B; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 500px;
+}
+
+.saving {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03031B; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-10px); /* Midway position */
+    }
+}
+
+.saving h1{
+    position: absolute;
+    top: 75%; 
+    left: 5%;
+    right: 0;
+    width: fit-content;
+    margin: 0px 0px 0px 20px;
+    padding: 30px;
+    font-size: 80px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.saving img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 600px;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.5)
+}
+
+.welcome-container h1{
+    text-align: center;
+    font-family: "Honk", system-ui;
+    font-size: 80px;
+}
+
+.welcome-container p{
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    place-self: center;
+    margin-bottom: 20px;
+}
+
+.title-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    background-color: rgba(3, 3, 27, 0.5);
+}
+
+.title-container h1{
+    font-family: "VT323", monospace;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#backButton {
+    place-self: center;
+    margin: 10px;
+    padding: 10px;
+    max-width: fit-content;
+    background-color: #44447e;
+    color: white;
+    border: 1px solid #44447e;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#backButton:hover {
+    background: linear-gradient(to bottom, yellow, hotpink);
+    color: black;
+    border: 1px solid black;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.last-item {
+    grid-column: 2;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none; 
+    color: inherit; 
+    font-family: VT323, monospace;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+    text-align: center;
+    width: 360px;
+    height: 80px;
+    font-family: "VT323", monospace;
+    color: #242B33;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px); 
+    opacity: 1;
+    background-color: rgba(179, 179, 214, 0.5);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    color: white;
+    background-color: #44447e;
+    transform: scale(1.02);
+}

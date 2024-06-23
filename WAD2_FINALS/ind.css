@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+body {
+    background-image: url(pewpew.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "VT323", monospace;
+}   
+
+/*PHP CSS*/
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+}
+.error {
+    width: 30vw;
+    height: fit-content;
+    color: white;
+    background-color: rgba(67, 67, 124, 0.5);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px;
+    width: 50vw;
+    background-color: rgba(67, 67, 124, 0.5);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    border: 1px solid rgba(67, 67, 124);
+    border-radius: 5px;
+}
+
+.title-container {
+    text-align: center;
+    color: white;
+}
+
+.title-container h1 {
+    font-family: "Honk", system-ui;
+    font-size: 80px;
+}
+
+#hint {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 30vw;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #151533;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+label {
+    grid-column: 1;
+    place-self: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+input {
+    grid-column: span 3;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+}
+
+#submit {
+    grid-column: 4;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #44447e;
+    color: white;
+    border: 1px solid #44447e;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background: linear-gradient(to bottom, yellow, hotpink);
+    color: black;
+    border: 1px solid black;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03031B; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-10px); /* Midway position */
+    }
+}
+
+.loading h1{
+    position: absolute;
+    top: 75%; 
+    left: 5%;
+    right: 0;
+    width: fit-content;
+    margin: 0px 0px 0px 20px;
+    padding: 30px;
+    font-size: 80px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.loading img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: rgba(67, 67, 124, 0.5);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px); 
+    opacity: 1;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.overlay-content p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #44447e;
+    color: white;
+    border: 1px solid #44447e;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background: linear-gradient(to bottom, yellow, hotpink);
+    color: black;
+    border: 1px solid black;
+}
